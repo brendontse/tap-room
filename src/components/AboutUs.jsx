@@ -3,9 +3,9 @@ import React from 'react';
 const aboutUsStyles = {
   marginTop: 100,
   marginLeft: '5%',
-  marginRight: '5%',
-
-  paddingLeft: '10%',
+  marginRight: '8%',
+  paddingTop: '2%',
+  paddingLeft: '20%',
   backgroundColor: '#a2faff'
 };
 
@@ -18,7 +18,7 @@ function AboutUs() {
     <div>
       <div style={aboutUsStyles}>
         <h1>About Us</h1>
-        <p>We have huge variety of kegs such as regular Corona and Corona Extra!</p>
+        <h4>We have huge variety of kegs such as Corona Light and Corona Extra!</h4>
         <img style={imgStyles} src="https://www.glengarrywines.co.nz/images/v10/brands/corona.png" />
       </div>
     </div>
