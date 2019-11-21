@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const headerStyles = {
-  backgroundColor: 'rgb(133, 233, 162)',
+  backgroundColor: 'rgb(333, 233, 162)',
 };
 
 const ulStyles = {

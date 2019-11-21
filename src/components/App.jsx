@@ -5,7 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const globalStyles = {
-
+  backgroundColor: '#ffa2cd'
 };
 
 
