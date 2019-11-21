@@ -1,7 +1,13 @@
 import React from 'react';
 import Keg from './Keg';
 
+const kegListStyles = {
+  marginTop: 10,
+};
 
+const kegStyles = {
+  paddingLeft: '5%'
+};
 
 var masterKegList = [
   {
@@ -16,13 +22,26 @@ var masterKegList = [
     price: '$100',
     alcoholContent: '4.5%'
   },
+  {
+    name: 'Corona Premier',
+    brand: 'Corona',
+    price: '$110',
+    alcoholContent: '4%'
+  },
+  {
+    name: 'Corona Familiar',
+    brand: 'Corona',
+    price: '$110',
+    alcoholContent: '6%'
+  },
+
 ];
 
 function KegList() {
   return (
-    <div>
+    <div style={kegStyles}>
       <hr/>
-      <h1 >Available Kegs</h1>
+      <h1 style={kegListStyles} >Available Kegs</h1>
       <h4> All kegs come in 1/2 barrel sizes</h4>
       <hr/>
       {masterKegList.map((keg, index) =>
