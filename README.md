@@ -12,7 +12,7 @@ A tap room web app that allows users to keep track of items in the tap room. Pat
 - the the repository to a local directory
 - in terminal, navigate to root directory with 'cd tap-room' 
 - run 'npm install' to install packages
-- run 'webpack-dev-server' to launch server
+- run 'npm run start' to launch server
 - go to http://localhost:8080 in desired browser or click on link provided by terminal
 
 ## SPECS
