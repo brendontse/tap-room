@@ -18,7 +18,7 @@ function AboutUs() {
     <div>
       <div style={aboutUsStyles}>
         <h1>About Us</h1>
-        <h4>We have huge variety of kegs such as Corona Light and Corona Extra!</h4>
+        <h4>We have huge selection of kegs such as Corona Light and Corona Extra!</h4>
         <img style={imgStyles} src="https://www.glengarrywines.co.nz/images/v10/brands/corona.png" />
       </div>
     </div>
