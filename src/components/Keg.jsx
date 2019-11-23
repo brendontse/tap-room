@@ -20,7 +20,7 @@ function Keg(props){
     </div>
   );
 }
-
+ 
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,

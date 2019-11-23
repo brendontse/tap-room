@@ -62,10 +62,10 @@ function KegList(props) {
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.object,
+  kegList: PropTypes.array,
   addQuantity: PropTypes.func,
   reduceQuantity: PropTypes.func,
   index: PropTypes.number
 };
-
+ 
 export default KegList;
