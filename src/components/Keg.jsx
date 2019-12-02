@@ -11,12 +11,23 @@ function Keg(props){
     props.reduceQuantity(props.index);
   }
   
+  // const kegStyle = {
+  //   display: 'inline-flex',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // };
+
+  //quantity is not returning????
+
   return (
     <div>
-      <h3>{props.brand} - {props.name}</h3>
-      <p><strong>{props.price} - {props.alcoholContent}</strong></p>
-      <p><button onClick={handleAddQuantity} className='material-icons'>Stock More</button> <button onClick={handleReduceQuantity} className='material-icons'>Sell a Pint</button> | {props.quantity}</p>
-      <hr/>
+      <div>
+        <h3>{props.brand} | {props.name}</h3>
+        <p><strong>{props.price} | {props.alcoholContent}</strong></p>
+        <p><button onClick={handleAddQuantity} className='material-icons'>Restock (+1)</button> 
+          <button onClick={handleReduceQuantity} className='material-icons'>Sale (-1)</button> Current Inventory: {props.quantity}</p>
+        <hr/>
+      </div>
     </div>
   );
 }

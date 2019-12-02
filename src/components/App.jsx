@@ -3,6 +3,7 @@ import Header from './Header';
 import AboutUs from './AboutUs';
 import KegList from './KegList';
 import NewKegForm from './NewKeg';
+import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -41,15 +42,19 @@ class App extends React.Component {
     this.setState({ masterKegList: newMasterKegList });
   }
 
+
+  // placeholder for homepage route
+
   render() {
     return (
       <div style={globalStyles}>
         <Header/>
         <Switch>
+          <Route exact path="/" component={AboutUs} /> 
           <Route exact path='/about' component={AboutUs} /> 
-          <Route exact path='/keglist' component={KegList} /> 
           <Route exact path='/keglist' render={() => <KegList kegList={this.state.masterKegList} addQuantity={this.state.handleAddQuantity} reduceQuantity={this.state.handleReduceQuantity} /> } /> 
           <Route path='/newkeg' render={() => <NewKegForm onNewKegCreation={this.handleNewKegToList} /> } />
+          <Route component={Error404} />
         </Switch>
       </div>
     );
