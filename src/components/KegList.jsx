@@ -3,31 +3,6 @@ import Keg from './Keg';
 import PropTypes from 'prop-types';
 
 
-
-
-// const kegStyles = {
-//   paddingLeft: '5%',
-//   zIndex: '1',
-//   position: 'absolute'
-// };
-
-// const imgStyles = {
-//   width: '1920px',
-//   height: '836px'
-// };
-
-// const imgDivStyles = {
-//   zIndex: '0',
-//   position: 'relative'
-// }
-
-let imgUrl = 'http://jackieos.com/wordpress/wp-content/uploads/2014/03/wood_background.jpg';
-let styles = {
-  backgroundImage: 'url(' + imgUrl + ')',
-  backgroundSize: 'cover',
-  overflow: 'hidden',
-};
-
 function KegList(props) {
   return (
     <div>
@@ -42,7 +17,7 @@ function KegList(props) {
           />
         )}
       </div>
-      <div style={styles}>
+      <div>
 
       </div>
       

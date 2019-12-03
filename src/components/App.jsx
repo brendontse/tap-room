@@ -6,10 +6,13 @@ import NewKegForm from './NewKeg';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../css/app.css';
+
 
 const globalStyles = {
   backgroundColor: '#ffa2cd'
 };
+
 
 
 class App extends React.Component {
