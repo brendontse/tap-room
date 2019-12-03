@@ -29,9 +29,9 @@ function Header() {
   return (
     <div style={headerStyles} >
       <ul style={ulStyles}>
-        <li style={liStyles}><a style={aStyles}><Link to="/about">About Us</Link></a></li>
-        <li style={liStyles}><a style={aStyles}><Link to="/keglist">List of Kegs</Link></a></li>
-        <li style={liStyles}><a style={aStyles}><Link to="/newkeg">Add a new Keg</Link></a></li>
+        <li style={liStyles}><span style={aStyles}><Link to="/about">About Us</Link></span></li>
+        <li style={liStyles}><span style={aStyles}><Link to="/keglist">List of Kegs</Link></span></li>
+        <li style={liStyles}><span style={aStyles}><Link to="/newkeg">Add a new Keg</Link></span></li>
       </ul> 
     </div>
   );

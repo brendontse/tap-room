@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const newKegStyles = {
-  paddingLeft: '5%',
+  paddingLeft: '42.5%',
   margin: '2%',
-  paddingBottom: '2%'
+  paddingBottom: '2%',
+  backgroundImage: '"url(${http://jackieos.com/wordpress/wp-content/uploads/2014/03/wood_background.jpg})"'
 };
 
 const inputStyle = {
@@ -31,28 +32,28 @@ function NewKeg(props){
   return (
     <div>
       <form onSubmit={handleNewKegSubmission} style={newKegStyles}>
-        <input style={inputStyle}
+        <p><input style={inputStyle}
           type='text'
           id='name'
           placeholder='Keg Name'
-          ref={(input) => { _name = input; }} />
-        <input
+          ref={(input) => { _name = input; }} /></p>
+        <p><input
           type='text'
           id='brand'
           placeholder='Brand Name'
-          ref={(input) => { _brand = input; }} />
-        <input
+          ref={(input) => { _brand = input; }} /></p>
+        <p><input
           type='text'
           id='price'
           placeholder='Price'
-          ref={(input) => { _price = input; }} /> 
-        <input
+          ref={(input) => { _price = input; }} /></p> 
+        <p><input
           type='text'
           id='alcoholContent'
           placeholder='ABV'
-          ref={(input) => { _alcoholContent = input; }} />
+          ref={(input) => { _alcoholContent = input; }} /></p>
 
-        <button type='submit'>Submit</button>
+        <p><button type='submit'>Submit</button></p>
       </form>
     </div>
   );
