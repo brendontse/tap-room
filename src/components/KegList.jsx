@@ -38,13 +38,12 @@ function KegList(props) {
   return (
     <div style={kegStyles}>
       {props.kegList.map((keg, index) =>
-        <Keg key={keg.Id}
+        <Keg key={index}
           name={keg.name}
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}
           quantity={keg.quantity}
-          index = {index}
         />
       )}
     </div>
