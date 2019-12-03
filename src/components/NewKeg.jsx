@@ -5,7 +5,6 @@ const newKegStyles = {
   paddingLeft: '42.5%',
   margin: '2%',
   paddingBottom: '2%',
-  backgroundImage: '"url(${http://jackieos.com/wordpress/wp-content/uploads/2014/03/wood_background.jpg})"'
 };
 
 const inputStyle = {

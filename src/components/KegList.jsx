@@ -2,50 +2,50 @@ import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
 
-// const kegListStyles = {
-//   marginTop: 10,
+
+
+
+// const kegStyles = {
+//   paddingLeft: '5%',
+//   zIndex: '1',
+//   position: 'absolute'
 // };
 
-const kegStyles = {
-  paddingLeft: '5%'
-};
+// const imgStyles = {
+//   width: '1920px',
+//   height: '836px'
+// };
 
-
-// function KegList(props) {
-//   props.kegList.sort((a, b) => b.quantity - a.quantity);
-//   return (
-//     <div style={kegStyles}>
-//       <hr/>
-//       <h1 style={kegListStyles} >Available Kegs</h1>
-//       <h4> All kegs come in 1/2 barrel sizes</h4>
-//       <hr/>
-//       {masterKegList.map((keg, index) =>
-//         <Keg name={keg.name}
-//           brand={keg.brand}
-//           price={keg.price}
-//           alcoholContent={keg.alcoholContent}
-//           quantity={keg.quantity}
-//           addQuantity={props.addQuantity}
-//           reduceQuantity={props.reduceQuantity}
-//           index={index}
-//           key={keg.id}/>
-//       )}
-//     </div>
-//   );
+// const imgDivStyles = {
+//   zIndex: '0',
+//   position: 'relative'
 // }
+
+let imgUrl = 'http://jackieos.com/wordpress/wp-content/uploads/2014/03/wood_background.jpg';
+let styles = {
+  backgroundImage: 'url(' + imgUrl + ')',
+  backgroundSize: 'cover',
+  overflow: 'hidden',
+};
 
 function KegList(props) {
   return (
-    <div style={kegStyles}>
-      {props.kegList.map((keg, index) =>
-        <Keg key={index}
-          name={keg.name}
-          brand={keg.brand}
-          price={keg.price}
-          alcoholContent={keg.alcoholContent}
-          quantity={keg.quantity}
-        />
-      )}
+    <div>
+      <div >
+        {props.kegList.map((keg, index) =>
+          <Keg key={index}
+            name={keg.name}
+            brand={keg.brand}
+            price={keg.price}
+            alcoholContent={keg.alcoholContent}
+            quantity={keg.quantity}
+          />
+        )}
+      </div>
+      <div style={styles}>
+
+      </div>
+      
     </div>
   );
 }

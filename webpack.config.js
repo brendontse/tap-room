@@ -59,8 +59,12 @@ module.exports = {
             "styled-jsx/babel"
           ]
         }
-      }
-    ]
+      },
+      {
+        test : /\.jpg$/,
+        exclude: /(node_modules)/,
+        loader : 'file-loader'
+      }    ]
   },
 
   plugins: [

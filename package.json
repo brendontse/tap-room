@@ -34,6 +34,7 @@
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.0.0",
     "style-loader": "^1.0.0",
-    "styled-jsx": "^3.2.4"
+    "styled-jsx": "^3.2.4",
+    "url-loader": "^3.0.0"
   }
 }
