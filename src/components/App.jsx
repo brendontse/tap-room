@@ -9,9 +9,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../css/app.css';
 
 
-const globalStyles = {
-  backgroundColor: '#ffa2cd'
-};
+// const globalStyles = {
+//   backgroundColor: '#ffa2cd'
+// };
 
 
 
@@ -50,12 +50,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={globalStyles}>
+      <div>
         <Header/>
         <Switch>
           <Route exact path="/" component={AboutUs} /> 
           <Route exact path='/about' component={AboutUs} /> 
-          <Route exact path='/keglist' render={() => <KegList kegList={this.state.masterKegList} addQuantity={this.state.handleAddQuantity} reduceQuantity={this.state.handleReduceQuantity} /> } /> 
+          <Route exact path='/keglist' render={() => <KegList kegList={this.state.masterKegList} addQuantity={this.handleAddQuantity} reduceQuantity={this.handleReduceQuantity} /> } /> 
           <Route path='/newkeg' render={() => <NewKegForm onNewKegCreation={this.handleNewKegToList} /> } />
           <Route component={Error404} />
         </Switch>
