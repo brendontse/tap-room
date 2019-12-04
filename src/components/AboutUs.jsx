@@ -2,15 +2,19 @@ import React from 'react';
 
 const aboutUsStyles = {
   marginTop: 100,
-  marginLeft: '5%',
-  marginRight: '8%',
-  paddingTop: '2%',
-  paddingLeft: '20%',
-  backgroundColor: '#a2faff'
+  marginLeft: '40rem',
+  marginRight: '30rem',
+  paddingTop: '4rem',
+  paddingLeft: '20rem',
+  paddingBottom: '4rem',
+  backgroundColor: 'rgba(0, 0, 0, 0.64)',
+  maxWidth: '115.5rem',
+  minWidth: '115.5rem',
 };
 
 const imgStyles = {
-  width: 900,
+  maxWidth: '70rem',
+  minWidth: '70rem'
 };
 
 function AboutUs() {

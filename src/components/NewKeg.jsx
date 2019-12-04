@@ -2,21 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const newKegStyles = {
-  paddingLeft: '25%',
+  paddingLeft: '20%',
   margin: '2%',
   paddingBottom: '2%',
   paddingTop: '4%'
+  
 };
 
 const inputStyle = {
-  padding: 2,
+  padding: 1,
   marginRight: 4
 };
 
 const divStyle = {
   maxWidth: '20%',
-  backgroundColor: 'grey'
-}
+  marginLeft: '40%',
+  backgroundColor: 'rgba(0, 0, 0, 0.64)',
+};
 
 function NewKeg(props){
   let _name = null;
@@ -38,6 +40,7 @@ function NewKeg(props){
     <div>
       <div style={divStyle}>
         <form onSubmit={handleNewKegSubmission} style={newKegStyles}>
+          <p>New Keg Entry</p>
           <p><input style={inputStyle}
             type='text'
             id='name'

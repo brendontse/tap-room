@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 
 function Keg(props){
 
+  const infoStyle = {
+    color: '#rgb(134, 158, 179)',
+    paddingTop: '1.5rem',
+    borderTop: '1px solid white',
+
+  }
+
   function handleAddQuantity() {
     props.addQuantity(props.index);
   }
@@ -10,7 +17,6 @@ function Keg(props){
   function handleReduceQuantity() {
     props.reduceQuantity(props.index);
   }
-  
   // const kegStyle = {
   //   display: 'inline-flex',
   //   alignItems: 'center',
@@ -21,11 +27,13 @@ function Keg(props){
 
   return (
     <div>
-      <div>
+      <div style={infoStyle}>
         <h3>{props.brand} | {props.name}</h3>
         <p><strong>{props.price} | {props.alcoholContent}</strong></p>
-        <p><button onClick={handleAddQuantity} className='material-icons'>Restock (+1)</button> 
-          <button onClick={handleReduceQuantity} className='material-icons'>Sale (-1)</button> Current Inventory: {props.quantity}</p>
+        <p><button onClick={handleReduceQuantity}>Sale (-1)</button> 
+          <button onClick={handleAddQuantity}>Restock (+1)</button>
+        </p>
+          <p>Current Inventory: {props.quantity}</p>
         <hr/>
       </div>
     </div>

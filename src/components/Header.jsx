@@ -2,36 +2,38 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const headerStyles = {
-  backgroundColor: 'rgb(333, 233, 162)',
+  backgroundColor: 'black',
+  paddingLeft: '38%',
+  
 };
 
 const ulStyles = {
   listStyleType: 'none',
-  padding: 30,
+  padding: '3rem',
   overflow: 'hidden',
 };
 
 const liStyles = {
   float: 'left',
-  borderRight: '1px solid black',
-  borderLeft: '1px solid black',
+  borderRight: '1px solid white',
+  borderLeft: '1px solid white',
   position: 'relative',
-  left: '42%'
 };
 
 const aStyles = {
   display: 'block',
   textAlign: 'center',
   padding: '8px 12px',
+  color: 'white'
 };
 
 function Header() {
   return (
     <div style={headerStyles} >
       <ul style={ulStyles}>
+        <li style={liStyles}><span style={aStyles}><Link to="/newkeg">Add New Kegs</Link></span></li>  
         <li style={liStyles}><span style={aStyles}><Link to="/about">About Us</Link></span></li>
-        <li style={liStyles}><span style={aStyles}><Link to="/keglist">List of Kegs</Link></span></li>
-        <li style={liStyles}><span style={aStyles}><Link to="/newkeg">Add a new Keg</Link></span></li>
+        <li style={liStyles}><span style={aStyles}><Link to="/keglist">Keg List</Link></span></li>
       </ul> 
     </div>
   );
